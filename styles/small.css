@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f6f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #123047;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.site-branding img {
+    width: 45px;
+    height: 45px;
+}
+
+.site-branding span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #20556b;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #2a9d8f;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #123047;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section h2 {
+    background-color: #123047;
+    color: white;
+    margin: 0;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.about-me p {
+    padding: 1rem;
+}
+
+.student-photo img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+
+/* Course Section */
+.course-filters {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.course-filters button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #dce5e9;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.course-filters button:hover,
+.course-filters button.selected {
+    background-color: #123047;
+    color: white;
+}
+
+.course-list {
+    padding: 0 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid #cbd5dc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.course-card.completed {
+    background-color: #d8eee8;
+    border-color: #2a9d8f;
+}
+
+#total-credits {
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #123047;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #94d2bd;
+}

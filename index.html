@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+
+    <meta name="description" content="Joseph Paul's WDD 231 course homepage showcasing web development courses, personal information, and programming progress.">
+    <meta name="author" content="Joseph Paul">
+
+    <title>Joseph Paul | WDD 231 Course Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
-<>
- <h1>WDD 231 - Joseph</h1>
+
+<body>
+
+    <header>
+        <div class="site-branding">
+            <img src="images/logo.svg" alt="Joseph Paul logo">
+            <span>Joseph Paul</span>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/index.html">Chamber Project</a>
+        <a href="project/index.html">Final Project</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="home-grid">
+
+            <section class="about-me">
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is Joseph Paul. I am a software development
+                    student with a strong interest in technology, programming,
+                    medicine, and problem-solving. I enjoy learning how
+                    technology works and using it to create meaningful
+                    solutions. My goal is to develop my skills in web
+                    development and software engineering while continuing
+                    to explore the fascinating connection between technology
+                    and medicine.
+                </p>
+            </section>
+
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+
+                <img src="images/joseph.jpg" alt="Photo of Joseph Paul">
+            </section>
+
+        </div>
+
+        <section class="certificate-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button id="all-courses" class="selected">All</button>
+                <button id="cse-courses">CSE</button>
+                <button id="wdd-courses">WDD</button>
+            </div>
+
+            <div id="course-container" class="course-list">
+                <!-- JavaScript will display the courses here. -->
+            </div>
+
+            <p id="total-credits">
+                The total credits for courses listed above is 0
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/joseph-paul-4500922ab/"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">LinkedIn</a>
+
+            <a href="https://github.com/joseph-paul-b"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">GitHub</a>
+
+            <a href="https://x.com/"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="X">X</a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span> Joseph Paul | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
 </html>
