@@ -1,0 +1,28 @@
+{
+  "familyName": "Santos",
+  "moveInDate": "2024-05-15",
+  "numberOfPeople": 4,
+  "visitedByBishopric": true,
+  "familyMembers": [
+    {
+      "name": "John Santos",
+      "gender": "Male",
+      "birthdate": "1985-03-12"
+    },
+    {
+      "name": "Mary Santos",
+      "gender": "Female",
+      "birthdate": "1988-07-24"
+    },
+    {
+      "name": "David Santos",
+      "gender": "Male",
+      "birthdate": "2010-11-05"
+    },
+    {
+      "name": "Sarah Santos",
+      "gender": "Female",
+      "birthdate": "2014-02-18"
+    }
+  ]
+}
