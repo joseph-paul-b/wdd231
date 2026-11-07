@@ -1,4 +1,4 @@
-/* 
+/*
    Lagos Business Connect Chamber
    Mobile Stylesheet
 */
@@ -18,11 +18,17 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
     margin: 0;
+}
+
+/* General Link Color */
+
+a {
+    color: var(--primary-color);
 }
 
 h1,
@@ -226,6 +232,20 @@ footer h2 {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+/* ---------- Footer Links: Contrast Fix ---------- */
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+footer a:hover,
+footer a:active {
+    color: var(--white-color);
 }
 
 /* ---------- Keyboard Accessibility ---------- */
