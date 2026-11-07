@@ -1,0 +1,237 @@
+/* 
+   Lagos Business Connect Chamber
+   Mobile Stylesheet
+*/
+
+/* ---------- General Styles ---------- */
+
+:root {
+    --primary-color: #005A3C;
+    --secondary-color: #E5B13D;
+    --background-color: #F7F9F7;
+    --text-color: #1F2937;
+    --white-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: var(--white-color);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand a {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    border-radius: 8px;
+}
+
+.brand div p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.brand div p:last-child {
+    font-size: 0.85rem;
+    font-weight: normal;
+}
+
+/* ---------- Navigation ---------- */
+
+#menu-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#navigation.open {
+    display: flex;
+}
+
+#navigation a {
+    color: var(--primary-color);
+    padding: 0.8rem;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}
+
+#navigation a:hover,
+#navigation a[aria-current="page"] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* ---------- Main Content ---------- */
+
+main > h1 {
+    margin-top: 1rem;
+}
+
+.directory {
+    margin-top: 2rem;
+}
+
+.directory h2 {
+    text-align: center;
+}
+
+/* ---------- Grid and List Buttons ---------- */
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.view-buttons button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* ---------- Member Cards: Grid View ---------- */
+
+#members-container.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.member-card {
+    background-color: var(--white-color);
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.member-card h3 {
+    color: var(--primary-color);
+}
+
+.member-card a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ---------- Member Cards: List View ---------- */
+
+#members-container.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#members-container.list-view .member-card {
+    display: block;
+    text-align: left;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#members-container.list-view .member-card img {
+    display: none;
+}
+
+#members-container.list-view .member-card h3 {
+    margin-top: 0;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer h2 {
+    color: var(--white-color);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ---------- Keyboard Accessibility ---------- */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}

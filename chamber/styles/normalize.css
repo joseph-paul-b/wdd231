@@ -1,0 +1,37 @@
+/* Normalize CSS */
+
+/* 1. Use consistent box sizing */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* 2. Remove default body margin */
+body {
+    margin: 0;
+}
+
+/* 3. Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 4. Make form elements inherit the page font */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* 5. Remove default link underline */
+a {
+    text-decoration: none;
+}

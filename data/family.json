@@ -1,28 +1,42 @@
-{
-  "familyName": "Santos",
-  "moveInDate": "2024-05-15",
-  "numberOfPeople": 4,
-  "visitedByBishopric": true,
-  "familyMembers": [
+[
     {
-      "name": "John Santos",
-      "gender": "Male",
-      "birthdate": "1985-03-12"
+        "name": "Rainoil Limited",
+        "address": "35 Kofo Abayomi Street, Victoria Island, Lagos",
+        "phone": "01 7004711-13",
+        "website": "https://www.rainoil.com",
+        "image": "images/rainoil.webp",
+        "membershipLevel": "Gold"
     },
     {
-      "name": "Mary Santos",
-      "gender": "Female",
-      "birthdate": "1988-07-24"
+        "name": "Seven-Up Bottling Company",
+        "address": "247 Moshood Abiola Way, Ijora, Lagos",
+        "phone": "0805 6900 900",
+        "website": "https://www.sevenup.org",
+        "image": "images/sevenup.webp",
+        "membershipLevel": "Silver"
     },
     {
-      "name": "David Santos",
-      "gender": "Male",
-      "birthdate": "2010-11-05"
+        "name": "MTN Nigeria",
+        "address": "MTN Plaza, No. 1 Awolowo Road, Falomo, Ikoyi, Lagos",
+        "phone": "300",
+        "website": "https://www.mtn.ng",
+        "image": "images/mtn.webp",
+        "membershipLevel": "Gold"
     },
     {
-      "name": "Sarah Santos",
-      "gender": "Female",
-      "birthdate": "2014-02-18"
+        "name": "GIG Logistics",
+        "address": "Alaga Gateway, No. 36 Oshodi-Apapa Expressway, Charity, Oshodi, Lagos",
+        "phone": "+234 708 096 0441",
+        "website": "https://giglogistics.com",
+        "image": "images/gig.webp",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Dangote Petroleum Refinery",
+        "address": "Lekki Free Trade Zone, Ibeju-Lekki, Lagos",
+        "phone": "+234 1 448 0815",
+        "website": "https://refinery.dangote.com",
+        "image": "images/dangote.webp",
+        "membershipLevel": "Gold"
     }
-  ]
-}
+]

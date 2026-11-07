@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Rainoil Limited",
+        "address": "35 Kofo Abayomi Street, Victoria Island, Lagos",
+        "phone": "01 7004711-13",
+        "website": "https://www.rainoil.com",
+        "image": "images/rainoil.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Seven-Up Bottling Company",
+        "address": "247 Moshood Abiola Way, Ijora, Lagos",
+        "phone": "0805 6900 900",
+        "website": "https://www.sevenup.org",
+        "image": "images/sevenup.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "MTN Nigeria",
+        "address": "MTN Plaza, No. 1 Awolowo Road, Falomo, Ikoyi, Lagos",
+        "phone": "300",
+        "website": "https://www.mtn.ng",
+        "image": "images/mtn.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "GIG Logistics",
+        "address": "Alaga Gateway, No. 36 Oshodi-Apapa Expressway, Charity, Oshodi, Lagos",
+        "phone": "+234 708 096 0441",
+        "website": "https://giglogistics.com",
+        "image": "images/gig.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Dangote Petroleum Refinery",
+        "address": "Lekki Free Trade Zone, Ibeju-Lekki, Lagos",
+        "phone": "+234 1 448 0815",
+        "website": "https://refinery.dangote.com",
+        "image": "images/dangote.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Flour Mills of Nigeria",
+        "address": "1 Golden Penny Place, Wharf Road, Apapa, Lagos",
+        "phone": "02018883506",
+        "website": "https://www.fmnplc.com",
+        "image": "images/flour-mills-150.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Nigerian Breweries Plc",
+        "address": "1 Abebe Village Road, Iganmu, Lagos",
+        "phone": "0800-600-0000",
+        "website": "https://www.nbplc.com",
+        "image": "images/nigerian-breweries-150.png",
+        "membershipLevel": 3
+    }
+]

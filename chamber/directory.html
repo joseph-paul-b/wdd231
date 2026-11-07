@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover businesses, services, and organisations across Lagos, Nigeria, through the Lagos Business Connect Chamber directory.">
+
+    <meta name="author" content="Joseph Paul">
+
+    <meta property="og:title" content="Lagos Business Connect Chamber | Directory">
+    <meta property="og:description" content="Discover and connect with businesses across Lagos, Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://joseph-paul-b.github.io/wdd231/chamber/images/lagos-chamber.jpg">
+    <meta property="og:url" content="https://joseph-paul-b.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <title>Lagos Business Connect Chamber | Directory</title>
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <span>LBCC</span>
+            </a>
+
+            <div>
+                <p>Lagos Business Connect</p>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navigation"
+        >
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html" aria-current="page">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Lagos Business Directory</h1>
+
+        <p>
+            Discover businesses and organisations
+            contributing to the growth of Lagos, Nigeria.
+        </p>
+
+        <section class="directory">
+
+            <h2>Our Chamber Members</h2>
+
+            <div class="view-buttons">
+
+                <button id="grid-view" type="button">
+                    Grid View
+                </button>
+
+                <button id="list-view" type="button">
+                    List View
+                </button>
+
+            </div>
+
+            <div id="members-container">
+
+                <!-- Business members will be displayed here using JavaScript. -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="contact-information">
+
+            <h2>Lagos Business Connect Chamber</h2>
+
+            <p>Lagos, Nigeria</p>
+
+            <p>Email: info@lagosbusinessconnect.example</p>
+
+            <p>Phone: +234 800 000 0000</p>
+
+        </div>
+
+        <div class="development-information">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Lagos Business Connect Chamber
+            </p>
+
+            <p>Joseph Paul | WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+      <p class="image-credit">
+    Photo:
+    <a href="https://commons.wikimedia.org/wiki/File:Lagos_skyline.jpg"
+       target="_blank"
+       rel="noopener noreferrer">
+        Lagos skyline by Clara Sanchiz
+    </a>,
+    licensed under
+    <a href="https://creativecommons.org/licenses/by-sa/2.0/"
+       target="_blank"
+       rel="noopener noreferrer">
+        CC BY-SA 2.0
+    </a>.
+</p>
+    </footer>
+
+</body>
+</html>

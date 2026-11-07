@@ -1,0 +1,87 @@
+/*
+   Lagos Business Connect Chamber
+   Larger Screen Stylesheet
+*/
+
+/* ---------- Larger Screens ---------- */
+
+@media screen and (min-width: 700px) {
+
+    /* Header */
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    /* Navigation */
+
+    #menu-button {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        margin-top: 0;
+    }
+
+    #navigation a {
+        border-bottom: none;
+        padding: 0.8rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* Main Content */
+
+    main {
+        padding: 2rem;
+    }
+
+    main > h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Member Grid */
+
+    #members-container.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Member List */
+
+    #members-container.list-view .member-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        padding: 2rem;
+    }
+
+}
+
+/* ---------- Wide Desktop Screens ---------- */
+
+@media screen and (min-width: 1000px) {
+
+    #members-container.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 2.5rem;
+    }
+
+}
