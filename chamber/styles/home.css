@@ -18,15 +18,17 @@
     object-fit: cover;
 }
 
-.hero::after {
-    content: "";
+.hero-content {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.15)
-    );
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    max-width: 600px;
+    color: #FFFFFF;
+    background-color: #1F2937;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 .hero-content {
