@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Connect with businesses, discover events, and explore opportunities through Lagos Business Connect Chamber of Commerce.">
+
+    <meta name="author" content="Joseph Paul">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Lagos Business Connect Chamber | Home">
+    <meta property="og:description" content="Connecting businesses and creating opportunities across Lagos, Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://joseph-paul-b.github.io/wdd231/chamber/images/lagos-chamber.jpg">
+    <meta property="og:url" content="https://joseph-paul-b.github.io/wdd231/chamber/index.html">
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <title>Lagos Business Connect Chamber | Home</title>
+
+    <!-- JavaScript -->
+    <script src="scripts/home.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="brand">
+            <a href="index.html">
+                <span>LBCC</span>
+            </a>
+
+            <div>
+                <p>Lagos Business Connect</p>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navigation"
+        >
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <img
+                src="images/lagos-chamber.jpg"
+                alt="Lagos city skyline showing the business environment of Nigeria"
+                fetchpriority="high"
+            >
+
+            <div class="hero-content">
+
+                <h1>Connecting Businesses, Creating Opportunities</h1>
+
+                <p>
+                    Building a stronger business community across Lagos, Nigeria.
+                </p>
+
+                <a href="join.html" class="join-button">
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="events">
+
+            <h2>Current Events</h2>
+
+            <div class="event-card">
+
+                <h3>Lagos Business Networking Forum</h3>
+
+                <p>
+                    Connect with business owners, entrepreneurs, and
+                    professionals across Lagos. Discover opportunities
+                    for collaboration and business growth.
+                </p>
+
+                <p>
+                    <strong>Date:</strong> Coming Soon
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+
+            <h2>Lagos Weather</h2>
+
+            <div class="current-weather" id="current-weather">
+
+                <h3>Current Conditions</h3>
+
+                <p>
+                    Temperature:
+                    <span id="current-temperature">Loading...</span>
+                </p>
+
+                <p>
+                    Weather:
+                    <span id="weather-description">Loading...</span>
+                </p>
+
+            </div>
+
+            <div class="weather-forecast">
+
+                <h3>Three-Day Forecast</h3>
+
+                <div id="forecast-container" aria-live="polite">
+
+                    <p>Loading weather forecast...</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights">
+
+            <h2>Business Spotlights</h2>
+
+            <p>
+                Discover some of the outstanding businesses
+                contributing to the growth of Lagos.
+            </p>
+
+            <div id="spotlights-container" aria-live="polite">
+
+                <p>Loading business spotlights...</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="contact-information">
+
+            <h2>Lagos Business Connect Chamber</h2>
+
+            <p>Lagos, Nigeria</p>
+
+            <p>Email: info@lagosbusinessconnect.example</p>
+
+            <p>Phone: +234 800 000 0000</p>
+
+        </div>
+
+        <div class="development-information">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Lagos Business Connect Chamber
+            </p>
+
+            <p>Joseph Paul | WDD 231</p>
+
+            <p>
+                Last Modification:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+        <p class="image-credit">
+
+            Photo:
+
+            <a href="https://commons.wikimedia.org/wiki/File:Lagos_skyline.jpg"
+               target="_blank"
+               rel="noopener noreferrer">
+                Lagos skyline by Clara Sanchiz
+            </a>,
+
+            licensed under
+
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/"
+               target="_blank"
+               rel="noopener noreferrer">
+                CC BY-SA 2.0
+            </a>.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
