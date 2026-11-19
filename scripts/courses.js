@@ -79,12 +79,35 @@ const courses = [
 ]
 const courseContainer = document.querySelector("#course-container");
 const totalCredits = document.querySelector("#total-credits");
+const courseDetails = document.querySelector("#course-details");
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" aria-label="Close">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
 
+    courseDetails.showModal();
+
+    courseDetails.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+// Close the modal when the user clicks outside of it (on the backdrop)
+courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
 function displayCourses(courseList) {
     courseContainer.innerHTML = "";
 
     courseList.forEach((course) => {
-        const courseCard = document.createElement("div");
+        const courseCard = document.createElement("button");
         courseCard.classList.add("course-card");
 
         if (course.completed) {
@@ -97,7 +120,9 @@ function displayCourses(courseList) {
             <p>${course.credits} credits</p>
             <p>${course.completed ? "Completed" : "In Progress"}</p>
         `;
-
+     courseCard.addEventListener("click", () => {
+    displayCourseDetails(course);
+});
         courseContainer.appendChild(courseCard);
     });
 
