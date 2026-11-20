@@ -43,6 +43,21 @@
     main > h1 {
         font-size: 2.2rem;
     }
+    /* Join Page Layout */
+
+.join-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.join-page > h1 {
+    grid-column: 1 / 3;
+}
+
+.membership-section {
+    margin-top: 0;
+}
 
     /* Member Grid */
 
