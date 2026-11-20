@@ -255,3 +255,116 @@ button:focus-visible {
     outline: 3px solid var(--secondary-color);
     outline-offset: 3px;
 }
+/* ---------- Join Page Form ---------- */
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.membership-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form select,
+.membership-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.membership-form textarea {
+    min-height: 120px;
+}
+
+.membership-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ---------- Membership Cards ---------- */
+
+.membership-section {
+    margin-top: 2rem;
+}
+
+.membership-section h2 {
+    text-align: center;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.membership-card {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.membership-card h3 {
+    color: var(--primary-color);
+}
+
+.membership-card a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.membership-card a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+/* ---------- Membership Modals ---------- */
+
+dialog {
+    width: 90%;
+    max-width: 450px;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+    color: var(--primary-color);
+}
+
+.close-modal {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
