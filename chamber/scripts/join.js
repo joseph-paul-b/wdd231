@@ -59,3 +59,11 @@ goldClose.addEventListener("click", () => {
 const timestamp = document.querySelector("#timestamp");
 
 timestamp.value = new Date().toLocaleString();
+// ---------- Display Footer Dates ----------
+
+const currentYear = document.querySelector("#current-year");
+const lastModified = document.querySelector("#last-modified");
+
+currentYear.textContent = new Date().getFullYear();
+
+lastModified.textContent = document.lastModified;
