@@ -320,6 +320,7 @@ button:focus-visible {
     border: 1px solid #dddddd;
     border-radius: 8px;
     text-align: center;
+    animation: card-appear 0.8s ease-out;
 }
 
 .membership-card h3 {
@@ -367,4 +368,15 @@ dialog h2 {
     padding: 0.6rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+}
+/* Membership Card Animation */
+
+@keyframes card-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
