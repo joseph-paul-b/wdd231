@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -59,10 +59,112 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Join Lagos Business Connect Chamber</h1>
-    </main>
+   <main>
+    <h1>Join Lagos Business Connect Chamber</h1>
 
+    <form method="get" action="thankyou.html">
+
+    <label for="first-name">
+        First Name
+        <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            title="Enter your first name"
+            autocomplete="given-name"
+            required
+        >
+    </label>
+
+    <label for="last-name">
+        Last Name
+        <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            title="Enter your last name"
+            autocomplete="family-name"
+            required
+        >
+    </label>
+
+    <label for="organization-title">
+        Organizational Title
+        <input
+            type="text"
+            id="organization-title"
+            name="organization-title"
+            title="Use at least seven letters, spaces, or hyphens"
+            autocomplete="organization-title"
+            pattern="[A-Za-z -]{7,}"
+        >
+    </label>
+
+    <label for="email">
+        Email Address
+        <input
+            type="email"
+            id="email"
+            name="email"
+            title="Enter a valid email address"
+            autocomplete="email"
+            placeholder="example@email.com"
+            required
+        >
+    </label>
+    <label for="phone">
+        Mobile Phone Number
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            title="Enter your mobile phone number"
+            autocomplete="tel"
+            required
+        >
+    </label>
+
+    <label for="organization">
+        Organization Name
+        <input
+            type="text"
+            id="organization"
+            name="organization"
+            title="Enter your organization name"
+            autocomplete="organization"
+            required
+        >
+    </label>
+
+    <label for="membership">
+        Membership Level
+        <select id="membership" name="membership">
+            <option value="" selected disabled>Select a membership level</option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+        </select>
+    </label>
+
+    <label for="description">
+        Organization Description
+        <textarea
+            id="description"
+            name="description"
+            title="Describe your organization"
+        ></textarea>
+    </label>
+        <input
+        type="hidden"
+        id="timestamp"
+        name="timestamp"
+    >
+
+        <input type="submit" value="Submit Membership Application">
+
+    </form>
+  </main>
     <footer>
 
         <div class="contact-information">
