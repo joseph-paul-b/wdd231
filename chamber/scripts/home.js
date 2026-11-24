@@ -1,5 +1,5 @@
 // OpenWeatherMap API Key
-const API_KEY = "d7910e6b480bed22c16d75e9af270699";
+const API_KEY = "c7d66ca99eb775ab5b6b5e9d43a18c3d";
 // Mobile Navigation
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#navigation");
@@ -168,7 +168,6 @@ async function getWeatherForecast() {
                 dailyForecasts[dateKey] = {
                     temperatures: [],
                     descriptions: [],
-                    icons: [],
                     times: []
                 };
             }
@@ -177,7 +176,6 @@ async function getWeatherForecast() {
             dailyForecasts[dateKey].descriptions.push(
                 item.weather[0].description
             );
-            dailyForecasts[dateKey].icons.push(item.weather[0].icon);
             dailyForecasts[dateKey].times.push(
                 localDate.getUTCHours()
             );
@@ -196,14 +194,13 @@ async function getWeatherForecast() {
         forecastDates.forEach(date => {
             const day = dailyForecasts[date];
 
-            const averageIndex = day.times.findIndex(
-                time => time >= 12
-            );
+           const middayIndex = day.times.findIndex(
+           time => time >= 12
+           );
 
-            const descriptionIndex = averageIndex >= 0
-                ? averageIndex
-                : 0;
-
+            const descriptionIndex = middayIndex >= 0
+            ? middayIndex
+           : 0;
             const dateObject = new Date(`${date}T12:00:00Z`);
 
             const dayName = dateObject.toLocaleDateString(

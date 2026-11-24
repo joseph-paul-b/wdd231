@@ -78,20 +78,21 @@
     }
     /* Join Page Layout */
 
-.join-page {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-}
+    /* Join Page Layout */
 
-.join-page > h1 {
-    grid-column: 1 / 3;
-}
+    .join-page {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
 
-.membership-section {
-    margin-top: 0;
-}
+    .join-page > h1 {
+        grid-column: 1 / 3;
+    }
 
+    .membership-section {
+        margin-top: 0;
+    }
     /* Member Grid */
 
     #members-container.grid-view {
