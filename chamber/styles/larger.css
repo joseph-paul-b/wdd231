@@ -43,6 +43,39 @@
     main > h1 {
         font-size: 2.2rem;
     }
+        /* Home Page Hero */
+
+    .hero img {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    /* Home Page Sections */
+
+    .events,
+    .weather,
+    .spotlights {
+        padding: 2rem;
+    }
+
+    /* Weather Forecast */
+
+    #forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Business Spotlights */
+
+    #spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
     /* Join Page Layout */
 
 .join-page {
