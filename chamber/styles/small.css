@@ -11,6 +11,7 @@
     --background-color: #F7F9F7;
     --text-color: #1F2937;
     --white-color: #FFFFFF;
+    --border-color: #DDDDDD;
 }
 
 * {
@@ -112,7 +113,7 @@ header {
     color: var(--primary-color);
     padding: 0.8rem;
     font-weight: bold;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid var(--border-color);
 }
 
 #navigation a:hover,
@@ -169,7 +170,7 @@ main > h1 {
 
 .member-card {
     background-color: var(--white-color);
-    border: 1px solid #dddddd;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
@@ -273,7 +274,9 @@ main > h1 {
 
 /* ---------- Home Page Events ---------- */
 
-.events {
+.events,
+.weather,
+.spotlights {
     margin: 2rem 0;
     padding: 1.5rem;
     background-color: var(--white-color);
@@ -296,14 +299,6 @@ main > h1 {
 }
 
 /* ---------- Home Page Weather ---------- */
-
-.weather {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background-color: var(--white-color);
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
 
 .weather h3 {
     text-align: center;
@@ -337,14 +332,6 @@ main > h1 {
 }
 
 /* ---------- Business Spotlights ---------- */
-
-.spotlights {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background-color: var(--white-color);
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
 
 #spotlights-container {
     display: grid;
@@ -446,7 +433,7 @@ button:focus-visible {
 .membership-form textarea {
     width: 100%;
     padding: 0.7rem;
-    border: 1px solid #999999;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     font: inherit;
 }
@@ -484,7 +471,7 @@ button:focus-visible {
 .membership-card {
     background-color: var(--white-color);
     padding: 1.5rem;
-    border: 1px solid #dddddd;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     text-align: center;
     animation: card-appear 0.8s ease-out;
