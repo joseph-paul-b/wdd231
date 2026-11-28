@@ -43,7 +43,8 @@
     main > h1 {
         font-size: 2.2rem;
     }
-        /* Home Page Hero */
+
+    /* Home Page Hero */
 
     .hero img {
         height: 500px;
@@ -76,7 +77,6 @@
     #spotlights-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    /* Join Page Layout */
 
     /* Join Page Layout */
 
@@ -93,6 +93,7 @@
     .membership-section {
         margin-top: 0;
     }
+
     /* Member Grid */
 
     #members-container.grid-view {
@@ -131,6 +132,49 @@
 
     main {
         padding: 2.5rem;
+    }
+
+}
+
+/* ---------- Discover Page: Medium Layout ---------- */
+
+@media screen and (min-width: 641px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "area-1 area-2"
+            "area-3 area-4"
+            "area-5 area-6"
+            "area-7 area-8";
+    }
+
+}
+
+/* ---------- Discover Page: Large Layout ---------- */
+
+@media screen and (min-width: 1025px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "area-1 area-1 area-2 area-3"
+            "area-4 area-5 area-6 area-6"
+            "area-7 area-7 area-8 area-8";
+    }
+
+}
+
+/* ---------- Discover Page: Image Hover ---------- */
+
+@media screen and (min-width: 641px) {
+
+    .discover-card img {
+        transition: transform 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
     }
 
 }

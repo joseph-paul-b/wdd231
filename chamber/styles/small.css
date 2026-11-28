@@ -536,3 +536,119 @@ dialog h2 {
         opacity: 1;
     }
 }
+/* ---------- Discover Page ---------- */
+
+.discover-section {
+    margin-top: 2rem;
+}
+
+.discover-section > h2 {
+    text-align: center;
+}
+
+#visit-message {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-areas:
+        "area-1"
+        "area-2"
+        "area-3"
+        "area-4"
+        "area-5"
+        "area-6"
+        "area-7"
+        "area-8";
+}
+
+.discover-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.discover-card h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.discover-card address {
+    font-style: normal;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.discover-card p {
+    margin: 1rem 0;
+}
+
+.discover-card button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.discover-card button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Discover Grid Areas: Mobile */
+
+.area-1 {
+    grid-area: area-1;
+}
+
+.area-2 {
+    grid-area: area-2;
+}
+
+.area-3 {
+    grid-area: area-3;
+}
+
+.area-4 {
+    grid-area: area-4;
+}
+
+.area-5 {
+    grid-area: area-5;
+}
+
+.area-6 {
+    grid-area: area-6;
+}
+
+.area-7 {
+    grid-area: area-7;
+}
+
+.area-8 {
+    grid-area: area-8;
+}
